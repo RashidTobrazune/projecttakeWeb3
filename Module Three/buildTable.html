@@ -26,6 +26,63 @@
     <h1>Mountains</h1>
     <div id="mountains"></div>
 
+
+<!-- Understanding the Problem
+We need to create an HTML table from an array of mountain objects
+
+The table should have:
+
+A header row with property names as column headings
+
+One row per mountain object
+
+Right-aligned numeric values
+
+The table should be appended to the div with id "mountains" -->
+
+
+    
+<!--     Solution Steps
+Get the container element where we'll place the table
+
+Create a new table element
+
+Extract column names from the first object's keys
+
+Create the header row with <th> elements
+
+For each mountain object, create a data row with <td> elements
+
+Right-align cells containing numeric values
+
+Append the table to the container -->
+
+
+
+<!-- Explanation
+Container Selection: We get the div with id "mountains" where we'll place our table
+
+Table Creation: We create a new <table> element
+
+Column Extraction: We get property names from the first mountain object to use as column headers
+
+Header Row: We create a header row (<tr>) with <th> elements for each column name
+
+Data Rows: For each mountain object, we:
+
+Create a new table row (<tr>)
+
+Add a cell (<td>) for each property value
+
+Right-align cells containing numeric values
+
+Final Attachment: We append the completed table to our container div -->
+
+
+
+
+
+    
     <script>
         const MOUNTAINS = [
             {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
